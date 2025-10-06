@@ -1,0 +1,113 @@
+body
+{
+    background: linear-gradient(to bottom, #b1f959, #f91e5f);
+    font-family: BaniFont;
+}
+
+@font-face {
+  font-family: BaniFont; /* set name */
+  src: url(Bani-Regular.ttf); /* url of the font */
+}
+
+header
+{
+    font-size: 15vw;
+    padding-left:1vw;
+    color:purple;
+
+}
+
+header span
+{
+    display: inline-block;
+    animation: wave 1s infinite ease-in-out;
+}
+
+figcaption
+{
+    text-align:center;
+}
+
+
+header span:nth-child(1) { animation-delay: 0s; color:rgb(200, 0, 126)}
+header span:nth-child(2) { animation-delay: 0.1s; color:rgb(190, 0, 126)}
+header span:nth-child(3) { animation-delay: 0.2s; color:rgb(180, 0, 126)}
+header span:nth-child(4) { animation-delay: 0.3s; color:rgb(170, 0, 126)}
+header span:nth-child(5) { animation-delay: 0.4s; color:rgb(160, 0, 126)}
+header span:nth-child(6) { animation-delay: 0.5s; color:rgb(150, 0, 126)}
+header span:nth-child(7) { animation-delay: 0.6s; color:rgb(140, 0, 126)}
+header span:nth-child(8) { animation-delay: 0.7s; color:rgb(130, 0, 126)}
+header span:nth-child(9) { animation-delay: 0.8s; color:rgb(120, 0, 126)}
+
+@keyframes wave
+{
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+}
+
+
+img
+{
+    width:5vw;
+}
+
+.container img
+{
+    width: auto
+}
+
+nav
+{
+    font-size:5vw;
+    margin-left:30vw;
+}
+
+a
+{
+    padding-left:1vw;
+    color:rgb(110, 0, 170);
+}
+
+a:hover
+{
+    color:rgb(12, 0, 139);
+}
+
+h1
+{
+    font-weight: bold;
+    font-size:4vw;
+}
+
+div
+{
+    font-size:2vw;
+}
+
+p
+{
+    font-size:2vw;
+}
+
+
+.container
+{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap:5vw;
+    
+    
+    justify-content: center; 
+    align-content: center;   
+}
+
+article
+{
+    border-bottom:dotted;
+}
+
+.blog
+{
+    display:flex;
+    flex-direction:column-reverse;
+}
