@@ -21,6 +21,7 @@ header span
 {
     display: inline-block;
     animation: wave 1s infinite ease-in-out;
+    text-shadow: rgb(179, 0, 179) -0.5vw 0.5vw;
 }
 
 figcaption
