@@ -25,7 +25,8 @@
         <style>
             body
             {
-            height:100vh;
+                overflow-y:hidden;
+                height:100vh;
             }
         </style>
     
@@ -38,20 +39,47 @@
         </header>
 
         <nav style="display: flex; align-items: center; gap: 5px;">
-            <img src="https://i.postimg.cc/dQmk1CNB/image.png" alt="Red arrow pointing to about">
+            <img src="https://i.postimg.cc/dQmk1CNB/image.png" alt="Red arrow pointing to about" class="arrow">
             <a href="About.html">About</a>
         </nav>
 
         <nav style="display:flex; align-items:center; gap:5px; margin-left:55vw">
-            <img src="https://i.postimg.cc/dQmk1CNB/image.png" alt="Red arrow pointing to blog" >
+            <img src="https://i.postimg.cc/dQmk1CNB/image.png" alt="Red arrow pointing to blog" class="arrow">
             <a href="Blog.html">Blog</a>
         </nav>
 
         <nav style="display:flex; align-items:center; gap:5px; margin-left:5vw">
-            <img src="https://i.postimg.cc/dQmk1CNB/image.png" alt="Red arrow pointing to portfolio" >
+            <img src="https://i.postimg.cc/dQmk1CNB/image.png" alt="Red arrow pointing to portfolio" class="arrow">
             <a href="portfolio.html">Portfolio</a>
         </nav>   
 
+
+        
+            
+        <img src="https://net00s.github.io/NetooWebsite/images/Cloud1.png" class="cloud1">
+        <img src="https://net00s.github.io/NetooWebsite/images/Cloud1.png" class="cloud2">
+
+        <script>
+            function randomCloudPosition(cloud)
+            {
+            // Random Y between -50vh and 50vh
+            const randomY = Math.random() * 100 - 50; 
+            cloud.style.top = `${randomY}vh`;
+            }
+
+            // Select all clouds
+            const clouds = document.querySelectorAll('.cloud1, .cloud2');
+
+            // Initialize random positions
+            clouds.forEach(cloud => {
+            randomCloudPosition(cloud);
+
+            // Assign new random Y each iteration
+            cloud.addEventListener('animationiteration', () => {
+            randomCloudPosition(cloud);
+            });
+            });
+        </script>
     </body>
 </html>
 
