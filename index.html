@@ -58,23 +58,25 @@
             
         <img src="images/Cloud1.png" class="cloud1">
         <img src="images/Cloud1.png" class="cloud2">
+        <img src="images/Cloud1.png" class="cloud3">
+        <img src="images/Cloud1.png" class="cloud4">
 
         <script>
             function randomCloudPosition(cloud)
             {
-            // Random Y between -50vh and 50vh
-            const randomY = Math.random() * 100 - 50; 
+            
+            const randomY = Math.random() * 100 - 25; 
             cloud.style.top = `${randomY}vh`;
             }
 
-            // Select all clouds
-            const clouds = document.querySelectorAll('.cloud1, .cloud2');
+            
+            const clouds = document.querySelectorAll('.cloud1, .cloud2, .cloud3, .cloud4');
 
-            // Initialize random positions
+           
             clouds.forEach(cloud => {
             randomCloudPosition(cloud);
 
-            // Assign new random Y each iteration
+            
             cloud.addEventListener('animationiteration', () => {
             randomCloudPosition(cloud);
             });
