@@ -76,7 +76,7 @@ header span:nth-child(9) { animation-delay: 0.8s; color:rgb(120, 0, 126)}
 {
     position: absolute;                   
     width: 30vw;                  
-    animation: cloud1 60s linear infinite; 
+    animation: cloud1 50s linear infinite; 
     z-index: -1;
     left: 0;
     right: 0;
@@ -86,7 +86,7 @@ header span:nth-child(9) { animation-delay: 0.8s; color:rgb(120, 0, 126)}
 .cloud2 {
     position: absolute;                   
     width: 35vw;                  
-    animation: cloud2 75s linear infinite; 
+    animation: cloud2 60s linear infinite; 
     z-index: -1;
     left: 0;
     right: 0;
@@ -96,7 +96,7 @@ header span:nth-child(9) { animation-delay: 0.8s; color:rgb(120, 0, 126)}
 .cloud3 {
     position: absolute;                   
     width: 25vw;                  
-    animation: cloud3 50s linear infinite; 
+    animation: cloud3 70s linear infinite; 
     z-index: -1;
     left: 0;
     right: 0;
@@ -106,7 +106,7 @@ header span:nth-child(9) { animation-delay: 0.8s; color:rgb(120, 0, 126)}
 .cloud4 {
     position: absolute;                   
     width: 30vw;                  
-    animation: cloud2 100s linear infinite; 
+    animation: cloud2 80s linear infinite; 
     z-index: -1;
     left: 0;
     right: 0;
