@@ -46,7 +46,7 @@ header span:nth-child(9) { animation-delay: 0.8s; color:rgb(120, 0, 126)}
 .trans span:nth-child(2){ color:pink}
 .trans span:nth-child(3){ color:white}
 .trans span:nth-child(4){ color:pink}
-.trans span:nth-child(5){ color:lightblue}
+.trans span:nth-child(5){ color:lightblue} 
 
 @keyframes wave
 {
