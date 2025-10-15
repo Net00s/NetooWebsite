@@ -26,11 +26,6 @@ header span
     text-shadow: rgb(179, 0, 179) -0.5vw 0.5vw;
 }
 
-figcaption
-{
-    text-align:center;
-}
-
 
 header span:nth-child(1) { animation-delay: 0s; color:rgb(200, 0, 126)}
 header span:nth-child(2) { animation-delay: 0.1s; color:rgb(190, 0, 126)}
@@ -124,9 +119,30 @@ header span:nth-child(9) { animation-delay: 0.8s; color:rgb(120, 0, 126)}
     width:5vw;
 }
 
-.container img
+.container div img
 {
-    width: auto
+    width: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container div:hover img
+{
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container div:hover figcaption
+{
+    transition: transform 0.3s ease;
+    transform:translateY(1vw)
+}
+
+figcaption
+{
+    text-align:center;
+    transition: transform 0.3s ease;
+    
 }
 
 nav
@@ -191,3 +207,4 @@ button
     size:10vw;
     font-size:2vw;
 }
+
