@@ -51,7 +51,7 @@ header span:nth-child(9) { animation-delay: 0.8s; color:rgb(120, 0, 126)}
 
 @keyframes cloud1
 {
-    0% {transform: translateX(-70vw); opacity:0.7;}
+    0% {transform: translateX(-70vw), translateY(-30vh); opacity:0.7;}
     100% {transform: translateX(70vw); opacity:0;}
 }
 

@@ -25,8 +25,7 @@
         <style>
             body
             {
-                
-                height:105vh;
+            min-height:100vw;
             }
         </style>
     
@@ -53,34 +52,7 @@
             <a href="portfolio.html">Portfolio</a>
         </nav>
 
-        
-            
-        <img src="images/Cloud1.png" class="cloud1">
-        <img src="images/Cloud2.png" class="cloud2">
-        <img src="images/Cloud2.png" class="cloud3">
-        <img src="images/Cloud1.png" class="cloud4">
 
-        <script>
-            function randomCloudPosition(cloud)
-            {
-            
-            const randomY = Math.random() * 100 - 25; 
-            cloud.style.top = `${randomY}vh`;
-            }
-
-            
-            const clouds = document.querySelectorAll('.cloud1, .cloud2, .cloud3, .cloud4');
-
-           
-            clouds.forEach(cloud => {
-            randomCloudPosition(cloud);
-
-            
-            cloud.addEventListener('animationiteration', () => {
-            randomCloudPosition(cloud);
-            });
-            });
-        </script>
     </body>
 </html>
 
