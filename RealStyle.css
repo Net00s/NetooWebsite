@@ -79,8 +79,7 @@ header span:nth-child(9) { animation-delay: 0.8s; color:rgb(120, 0, 126)}
 }
 
 .cloud1
-{
-    position: absolute;                   
+{                   
     width: 30vw;                  
     animation: cloud1 50s linear infinite; 
     z-index: -1;
@@ -185,4 +184,10 @@ article
 {
     display:flex;
     flex-direction:column-reverse;
+}
+
+button
+{
+    size:10vw;
+    font-size:2vw;
 }
