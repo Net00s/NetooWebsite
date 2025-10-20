@@ -5,6 +5,8 @@ body
     overflow-x: hidden;
     width:100vw;
     min-height:100vh;
+    cursor:url("images/cursor.png") 0 0, auto;
+    
 }
 
 @font-face {
@@ -17,6 +19,7 @@ header
     font-size: 15vw;
     padding-left:1vw;
     color:purple;
+    
 
 }
 
@@ -25,6 +28,7 @@ header span
     display: inline-block;
     animation: wave 1s infinite ease-in-out;
     text-shadow: rgb(179, 0, 179) -0.5vw 0.5vw;
+    
 }
 
 
@@ -88,6 +92,8 @@ nav
 {
     font-size:5vw;
     margin-left:30vw;
+    
+    
 }
 
 a
@@ -95,6 +101,7 @@ a
     padding-left:1vw;
     color:rgb(110, 0, 170);
     text-decoration:none;
+    cursor:url("images/link.png") 7.5 0, auto;
 }
 
 a:hover
@@ -147,3 +154,12 @@ button
     font-size:2vw;
 }
 
+.mountain
+{
+    z-index:-3;
+    image-rendering:pixelated;
+    height:90vh;
+    position:absolute;
+    bottom:0;
+    
+}
