@@ -1,165 +1,35 @@
-body
-{
-    background: linear-gradient(to bottom, rgba(137, 225, 255, 0.7), rgba(249, 31, 97, 0.7), rgba(0, 255, 0, 0.7));
-    font-family: BaniFont;
-    overflow-x: hidden;
-    width:100vw;
-    min-height:100vh;
-    cursor:url("images/cursor.png") 0 0, auto;
-    
+body{
+    background-image:linear-gradient(to bottom, rgb(0, 255, 51), rgb(255, 0, 191));
+    height:100vh;
+    color:white;
 }
 
-@font-face {
-  font-family: BaniFont; /* set name */
-  src: url(Bani-Regular.ttf); /* url of the font */
-}
-
-header
-{
-    font-size: 15vw;
-    padding-left:1vw;
-    color:purple;
-    
-
-}
-
-header span
-{
-    display: inline-block;
-    animation: wave 1s infinite ease-in-out;
-    text-shadow: rgb(179, 0, 179) -0.5vw 0.5vw;
-    
-}
-
-
-header span:nth-child(1) { animation-delay: 0s; color:rgb(200, 0, 126)}
-header span:nth-child(2) { animation-delay: 0.1s; color:rgb(190, 0, 126)}
-header span:nth-child(3) { animation-delay: 0.2s; color:rgb(180, 0, 126)}
-header span:nth-child(4) { animation-delay: 0.3s; color:rgb(170, 0, 126)}
-header span:nth-child(5) { animation-delay: 0.4s; color:rgb(160, 0, 126)}
-header span:nth-child(6) { animation-delay: 0.5s; color:rgb(150, 0, 126)}
-header span:nth-child(7) { animation-delay: 0.6s; color:rgb(140, 0, 126)}
-header span:nth-child(8) { animation-delay: 0.7s; color:rgb(130, 0, 126)}
-header span:nth-child(9) { animation-delay: 0.8s; color:rgb(120, 0, 126)}
-
-.trans span:nth-child(1){ color:lightblue}
-.trans span:nth-child(2){ color:pink}
-.trans span:nth-child(3){ color:white}
-.trans span:nth-child(4){ color:pink}
-.trans span:nth-child(5){ color:lightblue} 
-
-@keyframes wave
-{
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-30px); }
-}
-
-
-
-
-.arrow
-{
-    width:5vw;
-}
-
-.container div img
-{
-    width: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.container div:hover img
-{
-    transform: scale(1.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.container div:hover figcaption
-{
-    transition: transform 0.3s ease;
-    transform:translateY(1vw)
-}
-
-figcaption
-{
-    text-align:center;
-    transition: transform 0.3s ease;
-    
-}
-
-nav
-{
-    font-size:5vw;
-    margin-left:30vw;
-    
-    
-}
-
-a
-{
-    padding-left:1vw;
-    color:rgb(110, 0, 170);
-    text-decoration:none;
-    cursor:url("images/link.png") 7.5 0, auto;
-}
-
-a:hover
-{
-    color:rgb(12, 0, 139);
-}
-
-h1
-{
-    font-weight: bold;
-    font-size:4vw;
-}
-
-div
-{
-    font-size:2vw;
-}
-
-p
-{
-    font-size:2vw;
-}
-
-
-.container
-{
+.container{
     display:grid;
-    grid-template-columns: auto auto auto;
-    gap:5vw;
-    
-    
-    justify-content: center; 
-    align-content: center;   
+    grid-template-areas: 
+    'header header'
+    'left right'
+    'left right';
 }
 
-article
-{
-    border-bottom:dotted;
+.container div{
+    padding:30px;
+    margin:10px;
+    border-radius: 10px;
 }
 
-.blog
-{
-    display:flex;
-    flex-direction:column-reverse;
+.header{
+    background-color: rgba(165, 42, 42, 0.8);
+    grid-area:header;
+    text-align: center;
 }
 
-button
-{
-    size:10vw;
-    font-size:2vw;
+.left{
+    background-color:rgba(165, 42, 42, 0.8);
+    grid-area:left;
 }
 
-.mountain
-{
-    z-index:-3;
-    image-rendering:pixelated;
-    height:90vh;
-    position:absolute;
-    bottom:0;
-    
+.right{
+    background-color: rgba(165, 42, 42, 0.8);
+    grid-area:right;
 }
