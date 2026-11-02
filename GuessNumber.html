@@ -1,0 +1,29 @@
+<!-- 
+Size (higher lower)
+Number of digits (higher lower)
+sum of digits (higher lower)
+lowest divisible factor (higher lower)
+parity
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Number</title>
+        <link rel="stylesheet" href="NumberCss.css" />
+    </head>
+    <body>
+        <input type="number" id="guess">
+        <button onclick="giveClues()">guess</button>
+        <div id="container">
+            <p>Number:</p>
+            <p>Number of digits:</p>
+            <p>sum of digits:</p>
+            <!-- <p>lowest divisible factor:</p> -->
+        </div>
+        <p style="text-align: center;">---</p>
+        <div id="copy"></div>
+        
+    </body>
+    <script src="numberJS.js"></script>
+</html>
