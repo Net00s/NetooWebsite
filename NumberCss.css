@@ -1,6 +1,6 @@
 #container{
     display:grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     align-content: center;
     justify-content: space-evenly;
     width:100%
@@ -8,8 +8,18 @@
 
 #copy{
     display:grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     align-content: center;
     justify-content: center;
     width:100%
+}
+
+
+#container div{
+    text-align: center;
+}
+
+#winscreen{
+    text-align: center;
+    visibility: hidden;
 }
