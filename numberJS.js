@@ -1,15 +1,23 @@
 var guesses = 0
 
 addEventListener("DOMContentLoaded", function(){
+<<<<<<< Updated upstream
     const dailyNumber = getRandomNumberByDate(1, 1000000)
     console.log(dailyNumber/1337);
     
+=======
+    const dailyNumber = getRandomNumberByDate(1, 1000)
+>>>>>>> Stashed changes
 })
 
 
 function giveClues(){
+<<<<<<< Updated upstream
     guesses += 1
     const dailyNumber = getRandomNumberByDate(1, 1000000)
+=======
+    const dailyNumber = getRandomNumberByDate(1, 1000)
+>>>>>>> Stashed changes
     const guess = document.getElementById("guess")
 
     const copySize = document.createElement("div")
