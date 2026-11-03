@@ -44,6 +44,7 @@ function giveClues(){
     
     
     const numberDigits = document.createElement("div") // ----------------------------------------------
+    numberDigits.innerText = `🔒`
     if (guesses > 1){
         if (guess.value.length > String(dailyNumber).length){
             numberDigits.innerText = `${guess.value.length} ⬇️`
@@ -65,12 +66,13 @@ function giveClues(){
         }
     }
     else{
-        copyDigits.innerText = "🟦"
+        copyDigits.innerText = "🔒"
         document.getElementById("copy").appendChild(copyDigits)
     }
     document.getElementById("container").appendChild(numberDigits)
 
     const sumDigits = document.createElement("div") // ----------------------------------------------
+    sumDigits.innerText = `🔒`
     if (guesses > 2){
             if (getSumOfDigits(guess.value) > getSumOfDigits(dailyNumber)){
             sumDigits.innerText = `${getSumOfDigits(guess.value)} ⬇️`
@@ -92,12 +94,13 @@ function giveClues(){
         }
     }
     else{
-        copySum.innerText = "🟦"
+        copySum.innerText = "🔒"
         document.getElementById("copy").appendChild(copySum)
     }
     document.getElementById("container").appendChild(sumDigits)
 
     const lowestFactor = document.createElement("div") // ----------------------------------------------
+    lowestFactor.innerText = `🔒`
     if (guesses > 3){
         if (getSmallestFactor(guess.value) > getSmallestFactor(dailyNumber)){
             lowestFactor.innerText = `${getSmallestFactor(guess.value)} ⬇️`
@@ -119,7 +122,7 @@ function giveClues(){
         }
     }
     else{
-        copySmallest.innerText = "🟦"
+        copySmallest.innerText = "🔒"
         document.getElementById("copy").appendChild(copySmallest)
     }
     document.getElementById("container").appendChild(lowestFactor)
