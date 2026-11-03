@@ -34,9 +34,9 @@ function giveClues(){
         document.getElementById("copy").appendChild(copySize)
     }
     else{
-        numberSize.innerText = `${guess.value} 🟰`
+        numberSize.innerText = `${guess.value} ✅`
 
-        copySize.innerText = "🟰"
+        copySize.innerText = "✅"
         document.getElementById("copy").appendChild(copySize)
     }
     document.getElementById("container").appendChild(numberSize)
@@ -58,14 +58,14 @@ function giveClues(){
             document.getElementById("copy").appendChild(copyDigits)
         }
         else{
-            numberDigits.innerText = `${guess.value.length} 🟰`
+            numberDigits.innerText = `${guess.value.length} ✅`
 
-            copyDigits.innerText = "🟰"
+            copyDigits.innerText = "✅"
             document.getElementById("copy").appendChild(copyDigits)
         }
     }
     else{
-        copyDigits.innerText = "❎"
+        copyDigits.innerText = "🟦"
         document.getElementById("copy").appendChild(copyDigits)
     }
     document.getElementById("container").appendChild(numberDigits)
@@ -85,14 +85,14 @@ function giveClues(){
             document.getElementById("copy").appendChild(copySum)
         }
         else{
-            sumDigits.innerText = `${getSumOfDigits(guess.value)} 🟰`
+            sumDigits.innerText = `${getSumOfDigits(guess.value)} ✅`
 
-            copySum.innerText = "🟰"
+            copySum.innerText = "✅"
             document.getElementById("copy").appendChild(copySum)
         }
     }
     else{
-        copySum.innerText = "❎"
+        copySum.innerText = "🟦"
         document.getElementById("copy").appendChild(copySum)
     }
     document.getElementById("container").appendChild(sumDigits)
@@ -112,14 +112,14 @@ function giveClues(){
             document.getElementById("copy").appendChild(copySmallest)
         }
         else{
-            lowestFactor.innerText = `${getSmallestFactor(guess.value)} 🟰`
+            lowestFactor.innerText = `${getSmallestFactor(guess.value)} ✅`
 
-            copySmallest.innerText = "🟰"
+            copySmallest.innerText = "✅"
             document.getElementById("copy").appendChild(copySmallest)
         }
     }
     else{
-        copySmallest.innerText = "❎"
+        copySmallest.innerText = "🟦"
         document.getElementById("copy").appendChild(copySmallest)
     }
     document.getElementById("container").appendChild(lowestFactor)
