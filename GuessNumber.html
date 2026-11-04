@@ -14,8 +14,11 @@ parity
     </head>
     <body>
         <h1 id="winscreen">YOU WIN!!!!!!!</h1>
-        <input type="number" id="guess" value="0">
-        <button onclick="giveClues()" id="guessButton">guess</button>
+        <div id="guessContainer">
+            <input type="number" id="guess" value="0">
+            <button onclick="giveClues()" id="guessButton">guess</button>
+        </div>
+
         <div id="container">
             <p>Number:</p>
             <p>Number of digits:</p>
@@ -24,7 +27,21 @@ parity
         </div>
         <p style="text-align: center;">---</p>
         <div id="copy"></div>
-        <button onclick="clipboard()">copy result</button>
+        <button id="copyButton" onclick="clipboard()">copy result</button>
+        <p id="webLink">go to <a href="index.html">main website!</a> (don't do this)</p>
+
+        <details>
+            <summary>Changelog</summary>
+                <details>
+                    <summary>1.2</summary>
+                    <ul>
+                        <li>Added some more styling</li>
+                        <li>Added small animations</li>
+                        <li>Added this changelog!</li>
+                        <li>Added link to main site for some reason</li>
+                    </ul>
+                </details>
+        </details>
         
     </body>
     <script src="numberJS.js"></script>
